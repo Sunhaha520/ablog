@@ -31,7 +31,7 @@ export const author = {
     // 作者名称
     name: 'DEREK',
     // 作者头像
-    avatar: 'https://article.biliimg.com/bfs/article/fd7be039c3ca8f827c71322e1dea85a7c18ca7f2.jpg@1e_1c.webp',
+    avatar: 'https://s1.ax1x.com/2023/06/09/pCAJqfO.jpg',
     // 作者简介
     description: '我是一个喜欢折腾的土木打灰人，对一切新鲜事物充满好奇，希望我的文章能给你带来思考和帮助',
     // 作者邮箱
