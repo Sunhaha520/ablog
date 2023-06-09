@@ -8,7 +8,7 @@ category: 网站搭建
 slug: '20230211'
 star: 1
 image:
-    url: '<https://i.mjj.rip/2023/06/09/5c1f750e70d41a142b23279b885f988b.jpeg>..' 
+    url: 'https://i.mjj.rip/2023/06/09/5c1f750e70d41a142b23279b885f988b.jpeg' 
     alt: '封面'
 ---
 你好
