@@ -27,7 +27,7 @@ VuePress是一个基于Vue的静态网站生成器，可以用于搭建个人博
 
 确保你已经安装好了Node.js和Git，然后执行以下命令安装VuePress：
 
-```
+```sh
 npm install -g vuepress
 ```
 
@@ -35,7 +35,7 @@ npm install -g vuepress
 
 执行以下命令创建VuePress网站：
 
-```
+```sh
 mkdir my-blog
 cd my-blog
 npm init -y
@@ -45,7 +45,7 @@ npm init -y
 
 接着，在my-blog目录下创建一个docs目录，并在docs目录下创建一个README.md文件：
 
-```
+```sh
 mkdir docs
 echo '# Hello VuePress' > docs/README.md
 ```
@@ -58,14 +58,14 @@ config.js是VuePress的配置文件，用于配置VuePress的插件、主题等�
 
 我们先用默认配置创建一个config.js文件：
 
-```
+```sh
 mkdir .vuepress
 echo 'module.exports = {}' > .vuepress/config.js
 ```
 
 然后，我们在config.js中配置一下title和description：
 
-```
+```js
 module.exports = {
   title: 'My Blog',
   description: 'This is my blog powered by VuePress'
@@ -78,7 +78,7 @@ module.exports = {
 
 在my-blog目录下执行以下命令预览VuePress：
 
-```
+```sh
 vuepress dev docs
 ```
 
@@ -90,14 +90,14 @@ vuepress dev docs
 
 在docs目录下创建一个.vuepress目录，并在该目录下创建一个README.md文件：
 
-```
+```sh
 mkdir .vuepress
 echo '# Welcome to My Blog' > docs/.vuepress/README.md
 ```
 
 然后，在config.js中配置一下home属性：
 
-```
+```js
 module.exports = {
   title: 'My Blog',
   description: 'This is my blog powered by VuePress',
@@ -123,7 +123,7 @@ mkdir docs/posts
 
 首先，我们要让主页显示我们刚才创建的README.md文档。打开.vuepress/README.md文件，输入以下内容：
 
-```
+```markdown
 ---
 home: true
 ---
@@ -131,7 +131,7 @@ home: true
 
 然后，我们需要设置一个列表来展示博客文章。打开.vuepress/README.md文件，输入以下内容：
 
-```
+```markdown
 ---
 home: true
 ---
@@ -147,7 +147,7 @@ home: true
 
 打开一个终端，进入到my-blog目录中安装axios：
 
-```
+```sh
 npm install --save axios
 ```
 
@@ -157,7 +157,7 @@ npm install --save axios
 
 在PostsList.vue文件中，我们通过computed方法异步请求文章数据，在请求成功后将文章列表渲染成一个列表。
 
-```
+```vue
 <template>
   <ul>
     <li v-for="post in posts" :key="post.slug">
@@ -188,7 +188,7 @@ export default {
 
 在config.js文件中，我们需要在themeConfig中配置一个接口用于请求文章数据：
 
-```
+```js
 module.exports = {
   title: 'My Blog',
   description: 'This is my blog powered by VuePress',
@@ -225,7 +225,7 @@ module.exports = {
 
 在my-blog目录下执行以下命令生成静态文件：
 
-```
+```sh
 vuepress build docs
 ```
 
