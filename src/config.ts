@@ -101,8 +101,8 @@ export const memories: MemoriesConfig = {
 
 // twikoo => https://twikoo.js.org/
 export const twikoo: TwikooConfig = {
-    enabled: false,
-    url: "https://twikoo.you.love",
+    enabled: true,
+    url: "https://talkkkkk.zeabur.app/",
     recent_limit: 5,
     // 你的留言板页面，向用户呈现的时候引导用户去留言
     board_url: ''
